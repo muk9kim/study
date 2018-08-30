@@ -46,7 +46,7 @@ public class MainWebController {
 	@RequestMapping(value = "/getStringAddTest", method = RequestMethod.POST)
 	public String getStringAddTest(String param) {
 		logger.info("getStringAddTest");
-		String rtnVal = mainService.getStringAddTest(param);
+		String rtnVal = mainService.getTime();
 		logger.info("getStringAddTest rtnVal == " + rtnVal);
 		return rtnVal;
 		
